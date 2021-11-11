@@ -1,0 +1,31 @@
+{
+    "name": "mpyw/sharable-value-objects",
+    "description": "Share value objects that contain the same primitive value as a singleton.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mpyw\\SharableValueObjects\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mpyw\\SharableValueObjects\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mpyw",
+            "email": "ryosuke_i_628@yahoo.co.jp"
+        }
+    ],
+    "scripts": {
+        "test": "vendor/bin/phpunit tests"
+    }
+}
