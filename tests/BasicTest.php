@@ -128,10 +128,4 @@ class BasicTest extends TestCase
 
         serialize(Enabled::enabled());
     }
-
-    public function testInvalidDeserialization(): void
-    {
-        $this->assertSame(5, Point::create(5, 1)->x());
-        $this->assertSame(1, Point::create(5, 1)->y());
-    }
 }
