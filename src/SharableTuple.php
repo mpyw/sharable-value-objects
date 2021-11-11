@@ -21,7 +21,7 @@ trait SharableTuple
     // abstract public function value(): array;
 
     /**
-     * @return bool[]|int[]|string[]
+     * @return bool[]|float[]|int[]|string[]
      * @noinspection PhpDocSignatureInspection
      */
     final protected function getOriginalTuple(): array
