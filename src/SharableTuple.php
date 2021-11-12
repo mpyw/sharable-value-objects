@@ -16,7 +16,7 @@ trait SharableTuple
 
     /**
      * Create a new instance or retrieve existing one.
-     * Call $this->getOriginalValue() inside.
+     * Call $this->getOriginalTuple() inside.
      */
     // abstract public function value(): array;
 
