@@ -4,7 +4,16 @@
 
 Share value objects that contain the same primitive value as a singleton.
 
-**Singletons are kept under `WeakReference` objects.**
+> [!IMPORTANT]
+> **Singleton objects are kept under [`WeakReference`](https://www.php.net/manual/class.weakreference.php).**
+
+> [!TIP]
+> You can compare objects like primitives through `===` operator!
+> 
+> ```php
+> Value::create('one') === Value::create('one')  // This should be true
+> Value::create('one') === Value::create('two')  // This should be false
+> ```
 
 ## Installing
 
@@ -58,7 +67,7 @@ class ScreenNameTest extends TestCase
         // Different parameters yield different instances
         $this->assertNotSame(
             ScreenName::create('@mpyw'),
-            ScreenName::create('@twitter'),
+            ScreenName::create('@X'),
         );
     }
 }
