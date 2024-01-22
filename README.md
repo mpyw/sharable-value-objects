@@ -21,6 +21,10 @@ Share value objects that contain the same primitive value as a singleton.
 composer require mpyw/sharable-value-objects
 ```
 
+> [!CAUTION]
+> **PHP 8.3.2** is incompatible due to the bug in the PHP core.
+>   - [PHP 8.3.2: final private constructor not allowed when used in trait · Issue #13177 · php/php-src](https://github.com/php/php-src/issues/13177)
+
 ## Usage
 
 ```php
