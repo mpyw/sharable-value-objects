@@ -15,6 +15,13 @@ Share value objects that contain the same primitive value as a singleton.
 > Value::create('one') === Value::create('two')  // This should be false
 > ```
 
+## Requirements
+
+- PHP: `^8.2`
+
+> [!NOTE]
+> Older versions have outdated dependency requirements. If you cannot prepare the latest environment, please refer to past releases.
+
 ## Installing
 
 ```bash
